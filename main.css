@@ -1,0 +1,17 @@
+/* Truy vấn bình thường */
+h1 {
+    color: red;
+    font-size: 30px;
+}
+
+/* Truy vấn tới ID dùng dấu # */
+#Heading-2 {
+    color: green;
+    font-size: 30px;
+}
+
+/* Truy vấn tới Class dùng dấu . */
+.DanhSach {
+    color: blue;
+    font-size: 30px;
+}
