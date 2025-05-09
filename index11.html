@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+    Thứ tự ưu tiên trong CSS (Điểm càng cao thì càng ưu tiên dùng)
+        1/ Internal, External: Phần nào gọi sau thì ưu tiên hơn
+        2/ Inline: 1000 điểm
+        3/ #id: 100 điểm
+        4/ .class: 10 điểm
+        5/ Tag: 1 điểm
+        6/ Equal specificity: cùng cấp thì sẽ ưu tiên phần gọi sau, có thể gọi tag#id.class để tăng điểm => ưu tiên hơn
+        7/ Universal selector and inherrited: 0 điểm, khai báo ở main.css (* {}, html {}) để áp dụng chung cho file html
+-->
+<html>
+    <head>
+        <title>Huỳnh Hữu Vinh</title> <!-- Phần title là kết quả tìm kiếm trên google -->
+        <meta charset="utf-8">     <!-- Hỗ trợ hiển thị tiếng Việt ở body -->
+        <link rel="stylesheet" href="main.css"> <!-- Liên kết đến file main.css để lấy định dạng -->
+    </head>
+
+    <body>
+        <h1 id="Heading 1"> CSS selector </h1>
+        <h1 id="Heading-2"> CSS selector </h1>
+        <h1> CSS selector </h1>
+        <h2> ID & Class </h2>
+    
+        <ol> <!-- ol tạo ra số đầu dòng  -->
+            <li class="DanhSach">Internal</li>
+            <li class="DanhSach">External</li>
+            <li class="DanhSach">Inline</li>
+
+        </ol>
+
+    </body>
+</html>
