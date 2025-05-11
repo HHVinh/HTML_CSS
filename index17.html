@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+    CSS Box-sizing: dùng để tự điều chỉnh toàn bộ box có đúng kích thước như ban đầu
+        - Ví dụ ban đầu cài đặt 100x100, sau đó thêm border, padding...
+        - Nếu không dùng box-sizing thì kích thước sẽ tăng thêm >100x100
+        - Nếu dùng box-sizing thì kích thước toàn bộ vẫn giữ nguyên
+        => Ví dụ box1 không dùng, box2 có dùng
+        * Lưu ý nếu kích thước các phần vượt quá mức thì box-sizing không hiệu quả
+-->
+<html>
+    <head>
+        <title>Huỳnh Hữu Vinh</title> <!-- Phần title là kết quả tìm kiếm trên google -->
+        <meta charset="utf-8">     <!-- Hỗ trợ hiển thị tiếng Việt ở body -->
+        <link rel="stylesheet" href="main.css"> <!-- Liên kết đến file main.css để lấy định dạng -->
+        
+        <style>
+
+            html {
+                font-size: 100%; /* 100% = 16px */
+            }  
+
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }
+
+            .box1{
+                background-color: #333;
+                padding: 10px;
+            }
+
+            .box2{
+                background-color: violet;
+                padding: 10px; /* Vẫn dùng padding nhưng kích thước giữ nguyên */
+                box-sizing: border-box;
+            }
+
+            .box3{
+                background-color: firebrick;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box box1"> Box 1</div>
+        <div class="box box2"> Box 2 - Đây là nội dung bài viết</div>
+        <div class="box box3"> Box 3</div>
+
+    </body>
+</html>

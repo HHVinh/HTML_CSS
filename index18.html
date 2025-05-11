@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+    CSS Backround-clip: 
+        - Dùng để quyết định màu nền từ ngoài vào trong
+        - Nếu từ Border (hoặc mặc định là Border-box) thì áp dụng luôn cho Padding và Content
+        - Nếu từ Padding thì áp dụng cho Padding -> Content
+        - Nếu từ Content thì chỉ áp dụng cho Content
+
+-->
+<html>
+    <head>
+        <title>Huỳnh Hữu Vinh</title> <!-- Phần title là kết quả tìm kiếm trên google -->
+        <meta charset="utf-8">     <!-- Hỗ trợ hiển thị tiếng Việt ở body -->
+        <link rel="stylesheet" href="main.css"> <!-- Liên kết đến file main.css để lấy định dạng -->
+        
+        <style>
+
+            html, body {
+                margin: 0px;
+            }  
+
+            .header {
+                width: 100%;
+                height: 100px;
+                background-color: #333;
+                padding: 20px;
+                box-sizing: border-box;
+                border: 10px dashed violet;
+                /* Dòng trên là viết tắt của 3 dòng bên dưới                 
+                border: 10px;
+                border-style: dashed;
+                border-color: #fff;
+                 */
+                background-clip: content-box; /* => Màu backround chỉ áp dụng cho Content */
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="header"></div>
+
+    </body>
+</html>
