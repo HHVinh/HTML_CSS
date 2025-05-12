@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+    CSS functions:
+        - var()
+        - linear-gradient()
+        - rgba()
+        - rgb(): chỉnh màu nhưng không có độ mờ như rgba
+        - calc(): tính toán bên trong ví dụ => cacl(120px + 50px)
+        - attr(): thuộc tính của thẻ html thường kết hợp với lớp giả
+
+-->
+<html>
+    <head>
+        <title>Huỳnh Hữu Vinh</title> <!-- Phần title là kết quả tìm kiếm trên google -->
+        <meta charset="utf-8">     <!-- Hỗ trợ hiển thị tiếng Việt ở body -->
+        <link rel="stylesheet" href="main.css"> <!-- Liên kết đến file main.css để lấy định dạng -->
+        
+        <style>
+
+            html, body {
+                margin: 0px;
+            }  
+
+            .box {
+                width: 100%;
+                height: 120px;
+                background: rgb(255, 125, 0)
+            }
+
+            .box::after {
+                content: attr(data-title);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box" data-title="Đây là box màu cam"></div>
+        <h1>CSS Functions</h1>
+        <ol>
+            <li>var()</li>
+            <li>linear-gradient()</li>
+            <li>rgba()</li>
+            <li>rgb()</li>
+            <li>calc()</li>
+            <li>attr()</li>
+        </ol>
+
+    </body>
+</html>

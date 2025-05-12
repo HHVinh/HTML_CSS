@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <!--
-    CSS background-image (dùng ảnh làm nền): 
-        - background-image: url(link ảnh 1), url(link ảnh 2), ...
-        - Ảnh nào trước sẽ ở trên
-        - background-image: linear-gradient(từ 0deg đến 360deg, màu bắt đầu, màu kết thúc);
-        - deg là độ, mặc định không điền là 180 độ
-        - Màu sắc rgba(x,x,x,y) => tự chỉnh màu R(đỏ), G(Xanh lá), B(Xanh dương), A(Độ trong suốt)
-        - Độ trong suốt từ 0 đến 1 (0 là trong suốt tăng dần đến 1 là không nhìn xuyên qua)
+    CSS background-shorthand:
+        - Dùng để viết ngắn ngọn
+        - Cách viết => Background: ulr(đường dẫn) repeat position / size;
 
 -->
 <html>
@@ -25,10 +21,12 @@
                 width: 100%;
                 height: 100vh;
                 background-image:
-                linear-gradient(0, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),
                 url(https://scontent.fhan4-5.fna.fbcdn.net/v/t39.30808-6/469114943_2631116857074691_7410240799734486034_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=uIPkK4IrrEIQ7kNvwH1Ek7U&_nc_oc=Adn_vNwx0FEnigLiSyYe6QSAs_uLXgOwdcrRmrC8gJXvJQWENCJOHtddMk5y5mSE6mQ&_nc_zt=23&_nc_ht=scontent.fhan4-5.fna&_nc_gid=eH1oTaRIkF4DBu-Ddrs13A&oh=00_AfJ60BpBMP6_1de6CBVuw4Oi5z_9L9WVeBj_88PN31RM1g&oe=6826784E);
-                background-size: 100px; /* Dùng để chỉnh kích thước ảnh nền */
-                /* background-repeat: no-repeat; Dùng để không lặp lại ảnh nền nhiều lần */
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 50%; /* Dùng để chỉnh kích thước ảnh nền */
+                /* background: url(đường dẫn) no-repeat center / 50%;
+                => Đây là cách viết ngắn ngọn cho 4 dòng trên */
             }
 
         </style>
