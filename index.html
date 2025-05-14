@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <!--
-    CSS Position:
-        - Relative: vị trí tương đối
-        - Absolute: tuyệt đối, div nào có position (bất kì) gần nhất thì sẽ lấy làm mốc tọa độ
-        - Fixed: phụ thuộc khung trình duyệt
-        - Sticky: bám dính phụ thuộc khung trình duyệt, không khuyến cáo sử dụng
+    CSS Flexbox
+        - Flex container: thẻ chính
+            + Main axis: Trục chính (Main start - Main end)
+            + Cross axis: trục vuông gốc với main axis (Cross start - Cross end)
+        - Flex item: thẻ con
+            + Main size: trục của item song song với main axis
+            + Cross size: trục của item song song với cross axis
+
+    CSS Flexbox
+
+        - display: flex | inline-flex
+        - flex-direction: row | column
+        - flex-wrap: nowrap | wrap | wrap-reverse
+        - flex-basis:<length>
+        - justify-content: flex-start | flex-end | center | space-between | space-around
+        - justify-self: flex-start | flex-end | center
+        - align-content: flex-start | flex-end | center
+        - align-self: flex-start | flex-end | center
+        - flex-grow: <number>
+        - flex-shrink: <number>
+        - flex: <number>
+        - order: <number>
 -->
 <html>
     <head>
@@ -14,37 +31,36 @@
         
         <style>
 
-            html, body {
-                margin: 0px;
-            }
-
-            h1 {
-                margin-top: 80px;
-                padding: 0 16px;
-                color: #fff;
-                background-color: #333;
-                /* h1 sẽ được giữ lại khi kéo trang xuống cách top 10px */
-                position: sticky;
-                position: -webkit-sticky;
-                top: 10px;
-            }
-
-            ol {
-                /* Nâng chiều cao của thẻ ol */
-                height: 2000px;
-            }
+            
         </style>
     </head>
 
     <body>
 
-        <h1>Position</h1>
+        <div class="nav">
+            <ul class="nav">
+                <li class="nav-item">Giới thiệu</li>
+                <li class="nav-item">Kết nối</li>
+                <li class="nav-item">Tải ứng dụng</li>
+            </ul>
 
-        <ol>
-            <li>Relative</li>
-            <li>Absolute</li>
-            <li>Fixed</li>
-            <li>Sticky</li>
-        </ol>
+            <ul class="nav">
+                <li class="nav-item">Đăng ký</li>
+                <li class="nav-item">Đăng nhập</li>
+            </ul>
+        </div>
+        <!-- Form layout -->
+         <div class="form-container">
+            <form action="" class="form">
+                <div class="form_row">
+                    <label class="form_label" for="password">Name:</label>
+                    <input class="form_input" type="text" id="name">
+                </div>
+                <div class="form_row">
+                    <label class="form_label" for="password">Password:</label>
+                    <input class="form_input" type="password" id="password">
+                </div>
+            </form>
+         </div>
     </body>
 </html>

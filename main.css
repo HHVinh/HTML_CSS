@@ -1,34 +1,43 @@
-/* Biến toàn cục */
-:root {
-    --text-color: blue;
+/* navbar */
+.nav {
+    min-height: 42px;
+    background-color: #EF5122;
+    /* Cho 2 thẻ ul nằm ngang nhau */
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Truy vấn bình thường */
-h1 {
-    color: var(--text-color);
-    font-size: 30px;
+.nav-list {
+    padding-left: 0px;
+    margin: auto 16px;
 }
 
-h2 {
-    --my-color: blue;
-    color: var(--my-color);
-    font-size: 25px;
+.nav-item {
+    color: #fff;
+    /* Bỏ dấu chấm đầu dòng của ul */
+    list-style: none;
+    /* Tạo khoảng trống giữa các item cho đẹp */
+    margin: 0px 8px;
+    display: inline-block;
 }
 
-/* Truy vấn tới ID dùng dấu # */
-#Heading-2 {
-    color: var(--text-color);
-    font-size: 30px;
+/* Form layout */
+.form-container {
+    max-width: 720px;
+    padding: 32px;
+    margin: 36px auto 0 auto;
+    background-color: #fff;
 }
 
-/* Truy vấn tới Class dùng dấu . */
-.DanhSach {
-    color: var(--text-color);
-    font-size: 30px;
+.form_row {
+    padding: 8px 0;
+    display: flex;
 }
 
-ul {
-    color: black;
-    font-size: 20px;
+.form_label {
+    min-width: 90px;
 }
 
+.form_input {
+    flex: 1;
+}
