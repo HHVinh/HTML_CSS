@@ -22,28 +22,68 @@
         <title>Huỳnh Hữu Vinh</title> <!-- Phần title là kết quả tìm kiếm trên google -->
         <meta charset="utf-8">     <!-- Hỗ trợ hiển thị tiếng Việt ở body -->
         <link rel="stylesheet" href="main.css"> <!-- Liên kết đến file main.css để lấy định dạng -->
-        
-        <style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-            
-        </style>
     </head>
 
     <body>
          <div>
-            <button class="btn btn--size-s btn--success tbn--disabled">GO TO NEXT</button>
-            <button class="btn btn--size-s btn--warn">OK</button>
-            <button class="btn btn--size-s btn--danger">TRY AGAIN</button>
-        </div>
-        <div>
-            <button class="btn btn--success tbn--disabled">GO TO NEXT</button>
-            <button class="btn btn--warn">OK</button>
-            <button class="btn btn--danger">TRY AGAIN</button>
-        </div>
-        <div>
-            <button class="btn btn--size-l btn--success tbn--disabled">GO TO NEXT</button>
-            <button class="btn btn--size-l btn--warn">OK</button>
-            <button class="btn btn--size-l btn--danger">TRY AGAIN</button>
+            <!-- Success -->
+            <div class="toast">
+                <div class="toast__icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="toast__body">
+                    <h3 class="toast__title">Success</h3>
+                    <p class="toast__msg">Máy vi tính kết nối internet (Windows, Ubuntu hoặc MacOS)</p>
+                </div>
+                <div class="toast__close">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+            </div>
+
+            <!-- Info -->
+            <div class="toast">
+                <div class="toast__icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="toast__body">
+                    <h3 class="toast__title">Info</h3>
+                    <p class="toast__msg">Máy vi tính kết nối internet (Windows, Ubuntu hoặc MacOS)</p>
+                </div>
+                <div class="toast__close">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+            </div>
+
+            <!-- Warning -->
+            <div class="toast">
+                <div class="toast__icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="toast__body">
+                    <h3 class="toast__title">Warning</h3>
+                    <p class="toast__msg">Máy vi tính kết nối internet (Windows, Ubuntu hoặc MacOS)</p>
+                </div>
+                <div class="toast__close">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+            </div>
+
+            <!-- Error -->
+            <div class="toast">
+                <div class="toast__icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="toast__body">
+                    <h3 class="toast__title">Error</h3>
+                    <p class="toast__msg">Máy vi tính kết nối internet (Windows, Ubuntu hoặc MacOS)</p>
+                </div>
+                <div class="toast__close">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+            </div>
+
         </div>
     </body>
 </html>

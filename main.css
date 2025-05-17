@@ -9,60 +9,50 @@ body > div {
     margin: auto;
 }
 
-/* Block */
+/* Success */
 
-.btn {
-    display: inline-block;
-    text-decoration: none;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-    padding: 12px 48px;
-    /* Viền công cho 3 nút */
-    border-radius: 50px;
-    /* Tạo thành nút bấm được */
+.toast {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 20px 0;
+    border-left: 4px solid;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+}
+
+.toast + .toast {
+    margin: 24px;
+}
+.toast__icon {
+    font-size: 24px;
+}
+
+.toast__icon,
+.toast__close {
+    padding: 0 16px;
+}
+
+.toast__body {
+
+}
+
+.toast__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.toast__msg {
+    font-size: 14px;
+    color: #888;
+    margin-top: 4px;
+}
+
+.toast__close {
+    font-size: 20px;
+    color:  rgba(0, 0, 0, 0.3);;
     cursor: pointer;
-    /* Làm hiệu ứng giảm màu chậm lại */
-    transition: opacity 0.5s ease;
-    /* Chiều ngang nhỏ nhất của các nút */
-    min-width: 120px;
 }
 
-/* Dùng để chỉnh cho 2 btn phía sau btn đầu tiên */
-.btn + .bnt {
-    margin-left: 36px;
-}
 
-/* Khi đưa chuột vào sẽ giảm màu đi */
-.btn:hover {
-    opacity: 0.8;
-}
-
-.btn--success {
-    background-color: #71be43;
-}
-.btn--warn {
-    background-color: #ffb702;
-}
-.btn--danger {
-    background-color: #ff623d;
-}
-
-/* Làm nút không bấm vào được */
-.tbn--disabled {
-    /* Giảm mờ màu hơn và !important để bỏ :hover ở trên*/
-    opacity: 0.5 !important;
-    /* Đưa con trỏ về mũi tên bình thường */
-    cursor: default;
-}
-
-/* Tạo nút to hơn */
-.btn--size-l {
-    padding: 18px 56px;
-}
-
-/* Tạo nút nhỏ hơn */
-.btn--size-s {
-    padding: 6px 40px;
-}
