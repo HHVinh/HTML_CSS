@@ -41,3 +41,13 @@ html {
     display: flex; /* Các thuộc tính nằm ngag */
     flex-wrap: wrap; /* Nếu độ lớn k đủ thì thuộc tính sẽ nhảy xuống */
 }
+
+/* Animation */
+@keyframes faceIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
