@@ -86,7 +86,8 @@
     width: 180px;
     background-color: var(--white-color);
     position: absolute;
-    left:0;
+    left:50%; /* Để cạnh trái của ảnh bắt đầu ở giữa chữ */
+    transform: translate(-50%, 0); /* Để ảnh lùi ngược lại 50% kích thước ảnh */
     top: 120%;
     padding: 8px;
     border-radius: 5px; /* Bo viền góc của padding */
