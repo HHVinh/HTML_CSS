@@ -26,6 +26,10 @@
 
 }
 
+.header__navbar--item--has--notify:hover .header__notify {
+    display: block;    
+}
+
 .header__navbar--item, 
 .header__navbar--item--link {
     display: inline-block;
@@ -127,4 +131,128 @@
 
 .header__qr--download--img {
     height: 16px;
+}
+
+/* Header Notifiation */
+
+.header__notify {
+    position: absolute;
+    top: 118%;
+    right: 0;
+    width: 404px;
+    border: 2px solid #D3D3D3;
+    background-color: var(--white-color);
+    cursor: default;
+    animation: headerNotifyGrowth ease-in 0.3s; /* Hiệu ứng xuất hiện ở giữa thông báo */
+    transform-origin: top right; /* Cho hiệu ứng ở trên xuất hiện ở góc trên bên phải */
+    display: none;
+}
+
+.header__notify::before {
+    content: "";
+    border-width: 20px 20px;
+    border-style: solid;
+    position: absolute;
+    right: 11px;
+    top: -30px;
+    border-color: transparent transparent var(--white-color) transparent;
+}
+
+.header__notify::after {
+    content: "";
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    width: 90px;
+    height: 15px;
+    top: -15px;
+    right: 0px;
+}
+
+@keyframes headerNotifyGrowth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header__notify--header {
+    height: 40px;
+    background-color: var(--white-color);
+}
+
+.header__notify--header h3 {
+    color: #000000;
+    margin: 0 0 0 12px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 40px;
+    cursor: text;
+    text-align: center;
+
+}
+
+.header__notify--list {
+    padding: 0;
+    padding-left: 0;
+}
+
+.header__notify--item {
+    display: flex;
+
+}
+
+.header__notify--item:hover {
+    background-color: #f7f7f7;
+}
+
+
+.header__notify--link {
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    text-decoration: none;
+    background-color: rgba(254, 100, 51, 0.1);
+}
+
+.header__notify--img {
+    width: 48px;
+    object-fit: contain;
+}
+
+.header__notify--info {
+    margin-left: 12px;
+}
+
+.header__notify--name {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 350;
+    line-height: 1.8rem;
+}
+
+.header__notify--description {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #756F6E;
+    margin-top: 4px;
+}
+
+.header__notify--footer {
+    display: flex;
+}
+
+.header__notify--footer--btn {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 8px 48px;
+    margin: auto;
+    font-size: 1.4rem;
+    font-weight: 500;
 }

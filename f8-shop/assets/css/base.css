@@ -51,3 +51,32 @@ html {
         opacity: 1;
     }
 }
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal__body {
+    width: 400px;
+    height: 400px;
+    background-color: var(--white-color);
+    margin: auto;
+    position: relative;
+    border-radius: 5px; /* Viền công ở 4 góc */
+    z-index: 1;
+    /* Do lớp overlay và body cùng cấp nên khi tạo xong body nằm dưới
+        lớp overlay không điền nên mặc định z-index luôn nhỏ hơn 1
+        khi cùng cấp ai có z-index cao hơn thì nằm trên */
+}
