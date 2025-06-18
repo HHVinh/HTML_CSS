@@ -2,6 +2,8 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --primary-color: #EE4D2D;
+    --border-color: #dbdbdb;
 }
 
 * {
@@ -69,14 +71,48 @@ html {
 }
 
 .modal__body {
-    width: 400px;
-    height: 400px;
     background-color: var(--white-color);
     margin: auto;
     position: relative;
-    border-radius: 5px; /* Viền công ở 4 góc */
     z-index: 1;
     /* Do lớp overlay và body cùng cấp nên khi tạo xong body nằm dưới
         lớp overlay không điền nên mặc định z-index luôn nhỏ hơn 1
         khi cùng cấp ai có z-index cao hơn thì nằm trên */
+}
+
+/* Button style */
+.btn {
+    min-width: 142px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--primary { /* Chỉ áp dụng khi có cả 2 class cùng lúc "btn btn--primary"*/
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disable {/* Áp dụng cho các nút button không muốn cho nhấn vào */
+    cursor: default;
+    color: #949494;
+    background-color: #c3c3c3;
+}
+
+.btn.btn--size--s {
+    height: 32px;
+    font-size: 12px;
+    padding: 0 8px;
 }
