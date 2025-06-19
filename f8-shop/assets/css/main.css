@@ -1,5 +1,5 @@
 .header {
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(0, #fe6433,#f53e2d);
 }
 
@@ -11,7 +11,7 @@
 .header__navbar--list {
     list-style: none;
     padding-left: 0;
-    margin-top: 4px;
+    margin: 4px 0 0 0;
 
 }
 
@@ -275,6 +275,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 12px;
 }
 
 .authen--form__heading {
@@ -363,4 +364,62 @@
 .authen--form__social--facebook
 .authen--form__social--icon {
     color: var(--white-color); /* Chỉnh màu cho icon fb vì icon google k đổi màu vì vậy cần 2 class*/
+}
+
+/* Login form */
+.authen--form__help {
+    display: flex;
+    justify-content: flex-end; /* Căn theo chiều ngang trục chính */
+}
+
+.authen--form__help--link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #939393;
+}
+
+.authen--form__help--split {
+    display: block;
+    height: 16px;
+    border: 1px solid var(--border-color);
+    margin: 0px 16px 2px;
+}
+
+.authen--form__help--forgot {
+    color: var(--primary-color);
+}
+
+
+/* Header with search */
+
+.header-with-search {
+    height: var(--header-with-search-height);
+    display: flex;
+    align-items: center; /* Căn theo chiều dọc trục phụ */
+}
+
+.header__logo {
+    width: 200px;
+}
+
+.header__logo-img {
+    width: 150px;
+}
+
+.header__search {
+    flex: 1; /* Chiếm toàn bộ khoảng không gian còn lại theo chiều ngang*/
+    height: 40px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+}
+
+.header__cart {
+    width: 150px;
+    text-align: center;
+
+}
+
+.header__cart-icon {
+    color: var(--white-color);
+    font-size: 2.4rem;
 }
