@@ -36,7 +36,7 @@
 }
 
 .header__navbar--user-name {
-    margin-left: 8px;
+    margin-left: 4px;
     color: var(--white-color);
     font-size: 1.4rem;
     font-weight: 400;
@@ -88,6 +88,10 @@
 
 .header__navbar--user-item:hover {
     background-color: #fafafa;
+}
+
+.header__navbar--user-item--saparate {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .header__navbar--user-item a {
@@ -162,6 +166,11 @@
     text-decoration: none;
 }
 
+.header__navbar--icon--link:nth-child(2) {
+    margin-left: 3px;
+
+}
+
 .header__navbar--icon {
     font-size: 1.8rem;
     margin: 0 4px;
@@ -228,11 +237,12 @@
     top: 118%;
     right: 0;
     width: 404px;
+    border-radius: 3px;
     border: 2px solid #D3D3D3;
     background-color: var(--white-color);
     cursor: default;
     animation: headerNotifyGrowth ease-in 0.3s; /* Hiệu ứng xuất hiện ở giữa thông báo */
-    transform-origin: top right; /* Cho hiệu ứng ở trên xuất hiện ở góc trên bên phải */
+    transform-origin: cacl(100% -32px) top; /* Cho hiệu ứng ở trên xuất hiện ở góc trên bên phải */
     display: none;
 }
 
@@ -489,6 +499,11 @@
 
 .header__logo {
     width: 200px;
+}
+
+.header__logo-link {
+    text-decoration: none;
+    color: transparent;
 }
 
 .header__logo-img {
@@ -752,7 +767,7 @@
 .header__search-option {
     position: absolute;
     right: 0;
-    top: 125%;
+    top: calc(100% + 4px);
     width: 139px;
     list-style: none;
     padding-left: 0;
