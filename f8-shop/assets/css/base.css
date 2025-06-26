@@ -4,6 +4,7 @@
     --text-color: #333;
     --primary-color: #EE4D2D;
     --border-color: #dbdbdb;
+    --star-gold-color: #FFCE3E;
 
     --header-height: 120px;
     --navbar-height:33px;
@@ -47,19 +48,25 @@ html {
 .grid__row {
     display: flex; /* Các thuộc tính nằm ngag */
     flex-wrap: wrap; /* Nếu độ lớn k đủ thì thuộc tính sẽ nhảy xuống */
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 .grid__column-2 {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 16.667%;
 }
 
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
 .grid__column-10 {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 83.333%;
 }
 
